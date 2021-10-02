@@ -1,1 +1,27 @@
-<p>home works!</p>
+<div class="filters">
+    <mat-form-field>
+      <mat-label>Sort</mat-label>
+      <mat-select
+        panelClass="sort-select"
+        [(ngModel)]="sort"
+      >
+        <mat-option value="comics">comics</mat-option>
+        <mat-option value="-title">title</mat-option>
+        <mat-option value="-issue-number">issue number</mat-option>
+        <mat-option value="description">description</mat-option>
+      </mat-select>
+    </mat-form-field>
+</div>
+
+<div class="comics">
+    <div class="comic">
+        <div class="comic-thumb-container">
+            <img 
+            src="https://images-na.ssl-images-amazon.com/images/I/81sTo6MS5mL.jpg" 
+            alt="thumbnail"
+            class="comic-thumbnail">
+        </div>
+        <div class="comic-description">
+            <p class="comic-title">Title</p>
+        </div>
+</div>
